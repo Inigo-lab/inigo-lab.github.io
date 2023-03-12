@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+/*La finalidad de esta parte del código es establecer una altura fija para las imágenes del carousel de Bootstrap. Además con la propiedad 'scroll' en background, consigo que se desplacen automáticamente*/
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+}
+
+/*Este código de CSS esta destinado a centrar en tamaño y altura las imagenes del figure de Bootstrap --> https://stackoverflow.com/questions/44421192/center-figure-image-and-caption-in-bootstrap-4*/
+.figure {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/*Aquí establezo el color principal de la web. Los nombres de las clases son los establecidos por Bootstrap*/
+.py-5 {
+    background-color: rgb(10, 10, 10);
+}
+
+/*Cambio el color del texto de la web */
+.fw-light {
+    color: aliceblue;
+}
+
+/*Cambio el color del texto de la web */
+.lead {
+    color: rgb(194, 188, 188);
+}
+
+/*Cambio el color del cuerpo y letras del card de Boostrap*/
+.card-body {
+    background-color: rgb(26, 25, 25);
+    color: aliceblue;
+}
+
+/*Aquí establezco un punto de ruptura entre 900 y 700 pixeles que cambia de color el cuerpo de los card y las letras*/
+@media (max-width: 900px) and (min-width:700px) {
+
+    .fw-light {
+        color: rgb(3, 3, 3);
+    }
+
+    .card-body {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+}
+
+/*Cambio el color del texto de la figure de Bootstrap*/
+.figure-caption {
+    color: aliceblue;
+}

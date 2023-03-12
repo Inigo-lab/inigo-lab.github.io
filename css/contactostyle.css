@@ -1,0 +1,107 @@
+/*Aquí importo la tipografía de la página con google fonts. He escogido una llamada 'Poppins'*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/*Esto se aplica a toda la página. Aquí incluyo la tipografía*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*El color de fondo de la página*/
+body {
+    background-color: black;
+}
+
+/*El container esta hecho con flex. He aplicado un color blanco para el fondo. Le he dado una altura y un ancho. He establecido un borde para el radio.*/
+.container {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 1500px;
+    width: 1000px;
+    margin: auto;
+    margin-top: 150px;
+    border-radius: 24px;
+    justify-content: center;
+}
+
+/*En estas partes del código le doy estilo al formulario. Ya sea el color y tamaño de las letras, los márgenes, etc.*/
+.formulario {
+    padding: 30px 80px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario h2 {
+    font-size: 45px;
+    color: #706eb4;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.formulario p {
+    font-size: 16px;
+    color: #979899;
+    margin-bottom: 25px;
+}
+
+label {
+    font-size: 15px;
+    color: #979899;
+    margin-bottom: 15px;
+}
+
+.texto {
+    border: 0;
+    background-color: #c4c4cc;
+    padding: 15px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+}
+
+/*Aquí le doy estilo al botón de enviar.*/
+.enviar {
+    background-color: #5e5d6b;
+    border: 0;
+    padding: 14px;
+    color: white;
+    font-size: 15px;
+    border-radius: 24px;
+    width: 250px;
+    margin-top: 20px;
+
+}
+
+/*Aquí establezo los puntos de ruptura. Uno a 900px y otro a 600px. Reduzco el ancho del formulario.*/
+
+@media (max-width:900px) {
+
+    .container {
+        width: 350px;
+        height: 1500px;
+        margin-top: 50px;
+    }
+
+    .formulario {
+        width: 100%;
+        padding: 30px;
+    }
+}
+
+@media (max-width:600px) {
+
+    .container {
+        width: 250px;
+        height: 1500px;
+        margin-top: 50px;
+        color: #0600c0;
+    }
+
+    .formulario {
+        width: 120%;
+        padding: 30px;
+    }
+}
